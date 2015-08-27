@@ -16,7 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    float flnum = 0.3;
+    
+    int numberone = 1;
+    
+    int sumint = numberone + flnum;
+    
+    BOOL flag = NO;
+    
+    NSLog(@"BOOL型の正体:%d",flag);
+    
+    NSLog(@"足し算の答えは%d",sumint);
+    
+    // ラベルにHello,Cebuと表示する
+    NSString *str = @"Hello,Cebu!";
+    
+    str = @"Hello,NexSeed.";
+    
+    self.MyLabel.text = [NSString stringWithFormat:@"%d",sumint];
 }
 
 - (void)didReceiveMemoryWarning {
